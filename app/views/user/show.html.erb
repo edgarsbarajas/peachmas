@@ -1,0 +1,10 @@
+<h1><%= @gifter.name %>, enter the secret password sent to your phone to reveal the person you got!</h1>
+
+<%= form_with url: user_secret_url(@gifter.id) do |form| %>
+  <%= form.text_field :password %>
+  <%= form.submit value: "Submit" %>
+<% end %>
+
+<div class="giftee-wrapper">
+
+</div>

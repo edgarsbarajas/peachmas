@@ -1,0 +1,7 @@
+<h1>Welcome, Peach Family!</h1>
+<h2>Select your name</h2>
+<ul>
+  <% @peach_family.each do |peach| %>
+    <li><%= link_to(peach.name, user_url(peach.id)) %></li>
+  <% end %>
+</ul>
